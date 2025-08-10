@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: import.meta.env.MODE === "development" ? "https://playfulchat.onrender.com/api" : "/api",
+  baseURL: import.meta.env.MODE === "development" ? "http://localhost:1000/api" : "/api",
   withCredentials: true,
 });
